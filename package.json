@@ -7,7 +7,9 @@
     "dev-server": "./node_modules/.bin/encore dev-server --hot",
     "dev": "./node_modules/.bin/encore dev",
     "webpack": "./node_modules/.bin/encore dev --watch",
-    "prod": "./node_modules/.bin/encore production"
+    "prod": "./node_modules/.bin/encore production",
+    
+    "start": "node app.js"
   },
   "author": "dang",
   "license": "ISC",

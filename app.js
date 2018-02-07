@@ -8,6 +8,7 @@ var urlencodedParser = bodyParser.urlencoded({ extended: false });
 
 
 var app = express();
+const port = process.env.PORT || 8080;
 
 app.use(express.static(__dirname + '/public/build'));
 //app.use(express.static(__dirname + '/public/build/manifest.json'));
@@ -84,4 +85,7 @@ on en crée une vide sous forme d'array avant la suite */
 })
 
 
-.listen(8080);
+.listen(port,()=>{
+
+console.log(`Server run on port: ${port}`);
+});
